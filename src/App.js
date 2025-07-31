@@ -20,7 +20,7 @@ function App() {
 
     try {
       // const res = await axios.post("https://final-sugarcane-leaf-disease-detector.onrender.com", formData, {
-      const res = await axios.post("http://localhost:8000/predict", formData, {
+      const res = await axios.post("https://sugarcane-backend.onrender.com/predict" formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

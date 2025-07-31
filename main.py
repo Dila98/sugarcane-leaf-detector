@@ -60,7 +60,7 @@ async def predict(file: UploadFile = File(...)):
     results[0].save(filename=annotated_img_path)
 
     # Create URL for frontend
-    annotated_url = f"http://localhost:8000/static/annotated_{file_id}"
+    annotated_url = f"https://sugarcane-backend.onrender.com/static/annotated_{file_id}"
 
     return JSONResponse({
         "disease": disease,
